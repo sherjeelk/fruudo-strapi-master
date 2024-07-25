@@ -220,7 +220,7 @@ export class LocationPage {
 
 
     cordinate(postcode:string,city:string,type:string){
-        const url=`https://maps.google.com/maps/api/geocode/json?address=${postcode},${city}&key=AIzaSyA_XcBoKwuHWib5qv0LZHa1YdshJRSK-Yw`;
+        const url=`https://maps.google.com/maps/api/geocode/json?address=${postcode},${city}&key=`;
         this.httpclient.get(url).subscribe(data => {
             console.log('Cordinates Found for postcode'+postcode , data);
             if (type === 'pickup') {
